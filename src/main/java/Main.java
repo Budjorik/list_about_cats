@@ -29,7 +29,7 @@ public class Main {
         HttpGet request = new HttpGet(REMOTE_SERVICE_URI); // содаем объект запроса
         request.setHeader(HttpHeaders.ACCEPT, ContentType.APPLICATION_JSON.getMimeType());
 
-        CloseableHttpResponse response = response = httpClient.execute(request); // создаем запрос
+        CloseableHttpResponse response = httpClient.execute(request); // создаем запрос
 
         List<Post> posts = mapper.readValue(response.getEntity().getContent(),
                 new TypeReference<List<Post>>() {}); // преобразовываем 'json' в 'java'
