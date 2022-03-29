@@ -43,7 +43,7 @@ public class Post {
 
     @Override // переопределяем метод 'toString'
     public String toString() {
-        return "Posr" +
+        return "Post" +
             "\n id=" + id +
             "\n text=" + text +
             "\n type=" + type +

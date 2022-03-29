@@ -35,6 +35,6 @@ public class Main {
                 new TypeReference<List<Post>>() {}); // преобразовываем 'json' в 'java'
         posts.stream() // создаем поток
                 .filter(value -> value.getUpvotes() != null && value.getUpvotes() > 0) // фильтруем
-                .forEach(System.out::println); // выаодим в консоль
+                .forEach(System.out::println); // выводим в консоль
     }
 }
